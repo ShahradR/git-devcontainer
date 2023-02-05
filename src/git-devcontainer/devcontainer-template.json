@@ -1,0 +1,17 @@
+{
+  "id": "git-devcontainer",
+  "version": "1.0.0",
+  "name": "Git Dev Container",
+  "description": "A template containing common tools used for development. Used by the ShahradR/git-template repository.",
+  "documentationURL": "https://github.com/ShahradR/git-devcontainer/tree/main/src/git-devcontainer",
+  "licenseURL": "https://github.com/ShahradR/git-devcontainer/blob/main/LICENSE",
+  "options": {
+    "imageVariant": {
+      "type": "string",
+      "description": "Debian version (use bullseye on local arm64/Apple Silicon):",
+      "proposals": ["bullseye", "buster"],
+      "default": "bullseye"
+    }
+  },
+  "platforms": ["Any"]
+}
