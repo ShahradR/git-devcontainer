@@ -17,7 +17,8 @@
   "extensions": [
     "esbenp.prettier-vscode",
     "GitHub.copilot",
-    "TLahmann.alex-linter"
+    "TLahmann.alex-linter",
+    "jetmartin.bats"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
