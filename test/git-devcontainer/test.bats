@@ -19,7 +19,7 @@ setup() {
 
 @test "Verify that Python 3 has been installed" {
   run bash -c "python3 --version"
-  assert_output 'Python 3.10.9'
+  assert_output 'Python 3.10.10'
 }
 
 @test "Verify that PyPI 3 has been installed" {
@@ -29,7 +29,7 @@ setup() {
 
 @test "Verify that Git has been installed" {
   run bash -c "git --version"
-  assert_output 'git version 2.39.1'
+  assert_output 'git version 2.39.2'
 }
 
 @test "Verify that detect-secrets has been installed" {
@@ -44,7 +44,7 @@ setup() {
 
 @test "Verify that Node.JS has been installed" {
   run bash -c "node --version"
-  assert_output 'v16.19.0'
+  assert_output 'v16.19.1'
 }
 
 @test "Verify that npm has been installed" {
@@ -54,10 +54,10 @@ setup() {
 
 @test "Verify that the GitHub CLI has been installed" {
   run bash -c "gh --version"
-  assert_output --partial 'gh version 2.22.1'
+  assert_output --partial 'gh version 2.23.0'
 }
 
 @test "Verify that Docker is available" {
   run bash -c "docker --version"
-  assert_output --partial 'Docker version 20.10.22'
+  assert_output --partial 'Docker version 20.10.23'
 }
