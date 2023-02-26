@@ -34,6 +34,8 @@ runs:
     - name: Checkout main
       id: checkout_release
       uses: actions/checkout@v3
+      with:
+        submodules: recursive
 
     - name: Build template
       id: build_template
