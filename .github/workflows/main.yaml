@@ -16,15 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Smoke test for git-devcontainer
+        id: smoke_test
+        uses: ./.github/actions/smoke-test
         with:
-          submodules: recursive
-      - uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 18
-      - name: Install bats
-        run: npm install -g bats
-      - name: Run bats tests
-        run: ./test/bats/bin/bats ./test/git-devcontainer/test.bats
+          template: git-devcontainer
 
   vale:
     name: Run Vale
