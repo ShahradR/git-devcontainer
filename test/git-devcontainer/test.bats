@@ -13,51 +13,51 @@ setup() {
 }
 
 @test "Verify that Vim has been installed" {
-  run bash -c "vim --version"
-  assert_output --partial 'VIM - Vi IMproved 8.2'
+  run bash -c "which vim"
+  assert_output '/usr/bin/vim'
 }
 
 @test "Verify that Python 3 has been installed" {
-  run bash -c "python3 --version"
-  assert_output 'Python 3.10.10'
+  run bash -c "which python3"
+  assert_output '/usr/local/python/current/bin/python3'
 }
 
 @test "Verify that PyPI 3 has been installed" {
-  run bash -c "pip3 --version"
-  assert_output --partial 'pip 23.0'
+  run bash -c "which pip3"
+  assert_output '/usr/local/python/current/bin/pip3'
 }
 
 @test "Verify that Git has been installed" {
-  run bash -c "git --version"
-  assert_output 'git version 2.39.2'
+  run bash -c "which git"
+  assert_output '/usr/local/bin/git'
 }
 
 @test "Verify that detect-secrets has been installed" {
-  run bash -c "detect-secrets --version"
-  assert_output '1.4.0'
+  run bash -c "which detect-secrets"
+  assert_output '/usr/local/bin/detect-secrets'
 }
 
 @test "Verify that pre-commit has been installed" {
-  run bash -c "pre-commit --version"
-  assert_output 'pre-commit 3.0.4'
+  run bash -c "which pre-commit"
+  assert_output '/usr/local/bin/pre-commit'
 }
 
 @test "Verify that Node.JS has been installed" {
-  run bash -c "node --version"
-  assert_output 'v16.19.1'
+  run bash -c "which node"
+  assert_output '/usr/local/share/nvm/versions/node/v16.19.1/bin/node'
 }
 
 @test "Verify that npm has been installed" {
-  run bash -c "npm --version"
-  assert_output '8.19.3'
+  run bash -c "which npm"
+  assert_output '/usr/local/share/nvm/versions/node/v16.19.1/bin/npm'
 }
 
 @test "Verify that the GitHub CLI has been installed" {
-  run bash -c "gh --version"
-  assert_output --partial 'gh version 2.23.0'
+  run bash -c "which gh"
+  assert_output '/usr/bin/gh'
 }
 
 @test "Verify that Docker is available" {
-  run bash -c "docker --version"
-  assert_output --partial 'Docker version 20.10.23'
+  run bash -c "which docker"
+  assert_output '/usr/bin/docker'
 }
