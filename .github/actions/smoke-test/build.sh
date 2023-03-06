@@ -62,7 +62,7 @@ fi
 
 popd
 
-TEST_DIR="test/${TEMPLATE_ID}"
+TEST_DIR="test/"
 if [ -d "${TEST_DIR}" ] ; then
     echo "(*) Copying test folder"
     DEST_DIR="${SRC_DIR}/test-project"
