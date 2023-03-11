@@ -77,4 +77,5 @@ npm install -g @devcontainers/cli
 echo "::group::Building Dev Container"
 ID_LABEL="test-container=${TEMPLATE_ID}"
 devcontainer up --id-label ${ID_LABEL} --workspace-folder "${SRC_DIR}"
+devcontainer run-user-commands --id-label ${ID_LABEL}
 echo "::endgroup::"
