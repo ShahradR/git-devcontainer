@@ -44,12 +44,12 @@ setup() {
 
 @test "Verify that Node.JS has been installed" {
   run bash -c "which node"
-  assert_output '/usr/local/share/nvm/versions/node/v16.19.1/bin/node'
+  assert_output '/usr/local/share/nvm/current/bin/node'
 }
 
 @test "Verify that npm has been installed" {
   run bash -c "which npm"
-  assert_output '/usr/local/share/nvm/versions/node/v16.19.1/bin/npm'
+  assert_output '/usr/local/share/nvm/current/bin/npm'
 }
 
 @test "Verify that the GitHub CLI has been installed" {
